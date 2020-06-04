@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stripe - Payment Intents Demo</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body>
+    <section id="container">
+        <div id="auth-capture">
+            <h1>Auth and Capture</h1>
+            <div>
+                <button id="create-pi">Create Payment Intent</button>
+                <small id="payment-intent-id"></small>
+            </div>
+            <div>
+                <form id="payment-form">
+                    <div id="card-element">
+                        <!-- Elements will create input elements here -->
+                    </div>
+
+                    <!-- We'll put the error messages in this element -->
+                    <div id="card-errors" role="alert"></div>
+
+                    <button id="submit">Authorise payment</button>
+                </form>
+                <small id="charge-id"></small>
+            </div>
+            <div>
+                <button id="capture-payment">Capture payment</button>
+                <small id="capture-id"></small>
+            </div>
+            <div>
+                <button id="refund-payment">Refund payment</button>
+                <small id="refund-id"></small>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
