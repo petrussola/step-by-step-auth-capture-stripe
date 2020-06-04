@@ -12,7 +12,7 @@ let paymentIntentId;
 let card;
 
 // stripe
-var stripe = Stripe('pk_test_h8MeWS53S1PWBKuif0ev6BjO00VnXGmdmn');
+var stripe = Stripe(config.pk_stripe);
 var elements = stripe.elements();
 
 // create payment intents
